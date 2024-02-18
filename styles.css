@@ -1,0 +1,154 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and page tags */
+
+body {               
+  font-size: 12px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 10px 20px;
+  color: #444;
+}
+
+.page {
+  margin: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Semantic tags */
+
+header, article, footer {
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #888;
+}
+
+article {
+  padding-top: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  border-top: 1px solid #888;  
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  flex-direction: column;  
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+/* Content */
+
+h1, p {
+  padding: 10px;
+}
+
+h2 {
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+h3 {
+	padding-left: 10px;
+	color: #aaa;
+}
+
+ul, ol {
+	padding-left: 30px;
+
+}
+
+ul li, ol li{
+  padding-left: 10px;
+}
+
+/* Links */
+
+a:link {
+  color: #001a33;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(22, 21, 66);
+}
+a:hover {
+  color: #669900;
+  font-weight: bold;
+}
+a:active {
+  color: #99e600;
+}
+
+/* Tables */
+
+table {
+	background-color: #ddd;
+	margin-left: 10px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+ 
+  nav {
+  
+}
+
+article {
+  padding-top: 20px;
+}
+
+footer {
+  padding-top: 20px;
+}
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .page {
+    max-width: 700px;
+	margin: auto;
+  }
+  
+  nav ul {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;	
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 700px;
+	margin: auto;
+  }
+  
+  nav ul {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;	
+  }
+}
